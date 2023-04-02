@@ -9,7 +9,6 @@ function shatGpt() {
   const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
   return '💩'.repeat(randomNumber);
 }
-window.scrollTo(0, document.body.scrollHeight);
 
 export const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -44,8 +43,7 @@ export const Chat = () => {
   return (
     <div className='h-screen w-full bg-gray-200 flex flex-col justify-end p-4'>
       <Helmet>
-        <meta charSet='utf-8' />
-        <title>Hello</title>
+        <title>ShatGPT</title>
       </Helmet>
       <div className='flex flex-col'>
         {messages.map((message, index) => {
