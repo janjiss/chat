@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/shat-gpt/static/css/main.9bb3a851.css",
-    "main.js": "/shat-gpt/static/js/main.e3a71e8e.js",
+    "main.css": "/shat-gpt/static/css/main.223cfd2c.css",
+    "main.js": "/shat-gpt/static/js/main.e71a76fe.js",
     "static/js/787.b58c523f.chunk.js": "/shat-gpt/static/js/787.b58c523f.chunk.js",
     "index.html": "/shat-gpt/index.html",
-    "main.9bb3a851.css.map": "/shat-gpt/static/css/main.9bb3a851.css.map",
-    "main.e3a71e8e.js.map": "/shat-gpt/static/js/main.e3a71e8e.js.map",
+    "main.223cfd2c.css.map": "/shat-gpt/static/css/main.223cfd2c.css.map",
+    "main.e71a76fe.js.map": "/shat-gpt/static/js/main.e71a76fe.js.map",
     "787.b58c523f.chunk.js.map": "/shat-gpt/static/js/787.b58c523f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bb3a851.css",
-    "static/js/main.e3a71e8e.js"
+    "static/css/main.223cfd2c.css",
+    "static/js/main.e71a76fe.js"
   ]
 }

@@ -1,16 +1,52 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { TypeAnimation } from 'react-type-animation';
 
 function shatGpt() {
-  const min = 20;
-  const max = 60;
-  const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-  return '💩'.repeat(randomNumber);
+  const items = [
+    'kas i na',
+    'Kādreiz mūžā atbildēs ar?',
+    '🤣🤣🤣',
+    'tu dzērs i?',
+    '🤣🤣🤣',
+    '9gag šitas bi',
+    '🤣🤣🤣',
+    'https://9gag.com/gag/amAGYMy',
+    'Mr flex',
+    'bļē',
+    '🤣🤣🤣',
+    'Mega Chad',
+    '🤣🤣🤣',
+    'Pārnolicies',
+    '🤣🤣🤣',
+    'And?',
+    '🧠',
+  ];
+
+  return items[Math.floor(Math.random() * items.length)];
 }
 
 export const Chat = () => {
+  const [bottomPadding, setBottomPadding] = useState(0);
+
+  useEffect(() => {
+    const adjustBottomPadding = () => {
+      const vh = Math.max(
+        document.documentElement.clientHeight || 0,
+        window.innerHeight || 0
+      );
+      const paddingBottom = Math.max(vh - window.innerHeight, 0);
+      setBottomPadding(paddingBottom);
+    };
+
+    window.addEventListener('resize', adjustBottomPadding);
+    adjustBottomPadding();
+
+    return () => {
+      window.removeEventListener('resize', adjustBottomPadding);
+    };
+  }, []);
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState('');
 
@@ -43,7 +79,7 @@ export const Chat = () => {
   return (
     <div className='h-screen w-full bg-gray-200 flex flex-col justify-end p-4'>
       <Helmet>
-        <title>ShatGPT</title>
+        <title>JankGPT</title>
       </Helmet>
       <div className='flex flex-col'>
         {messages.map((message, index) => {
@@ -77,7 +113,7 @@ export const Chat = () => {
           );
         })}
       </div>
-      <div className='flex mt-4'>
+      <div className='flex mt-4' style={{ paddingBottom: bottomPadding }}>
         <input
           type='text'
           value={inputValue}
