@@ -4,22 +4,7 @@ import { Helmet } from 'react-helmet';
 import { TypeAnimation } from 'react-type-animation';
 
 function shatGpt() {
-  const items = [
-    'kas i na',
-    'Kādreiz mūžā atbildēs ar?',
-    'tu dzērs i?',
-    '🤣🤣🤣',
-    '9gag šitas bi',
-    '🤣🤣🤣',
-    'https://9gag.com/gag/amAGYMy',
-    'Mr flex',
-    'bļē',
-    '🤣🤣🤣',
-    'Mega Chad',
-    'Pārnolicies',
-    'And?',
-    '🧠',
-  ];
+  const items = [];
 
   return items[Math.floor(Math.random() * items.length)];
 }
