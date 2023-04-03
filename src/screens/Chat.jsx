@@ -7,7 +7,6 @@ function shatGpt() {
   const items = [
     'kas i na',
     'Kādreiz mūžā atbildēs ar?',
-    '🤣🤣🤣',
     'tu dzērs i?',
     '🤣🤣🤣',
     '9gag šitas bi',
@@ -17,9 +16,7 @@ function shatGpt() {
     'bļē',
     '🤣🤣🤣',
     'Mega Chad',
-    '🤣🤣🤣',
     'Pārnolicies',
-    '🤣🤣🤣',
     'And?',
     '🧠',
   ];
